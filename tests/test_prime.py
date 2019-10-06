@@ -75,3 +75,15 @@ def test_param_six():
     output_list = generate_prime_factors(value,factors)
     # Assert only 2 values - [2, 3]:
     assert len(output_list) == 2 and output_list[0] == 2 and output_list[1] == 3
+
+
+def test_param_eight():
+    """
+    STEP 7: Given 8 as a parameter, a list containing 3 values of
+    2 should be returned.
+    """
+    factors = []
+    value = 8
+    output_list = generate_prime_factors(value,factors)
+    # Assert only 3 values - [2, 2, 2]:
+    assert len(output_list) == 3 and output_list[0] == 2 and output_list[1] == 2 and output_list[2] == 2
