@@ -27,7 +27,7 @@ def generate_prime_factors(number, factors):
                 number /= i
             else:
                 # To test for values higher than 2, iterate i by 1 each time
-                # through the loop Satisfies conditions of test_param_three
+                # through the loop. Satisfies conditions of test_param_three
                 # in addition to needing a loop:
                 i += 1
 
