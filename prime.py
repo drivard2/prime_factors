@@ -23,7 +23,8 @@ def generate_prime_factors(number, factors):
                 factors.append(i)
 
                 # To prevent infinite loop, assign a decreased value to number
-                # by dividing itself with the current iterator:
+                # by dividing itself with the current iterator.
+                # Satisfies conditions of test_param_four to test_param_nine:
                 number /= i
             else:
                 # To test for values higher than 2, iterate i by 1 each time
