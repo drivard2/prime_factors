@@ -13,7 +13,8 @@ def generate_prime_factors(number, factors):
     if (type(number) is not int):
         raise ValueError
     else:
-        #instantiate iterator to 2. Satisfies condition of test_param_one
+        # Instantiate iterator to 2. Satisfies conditions of test_param_one
+        # and test_param_two (Value must be at least 2)
         i = 2
             # If the number can be divided evenly with no remainder (modulus),
             # append the iterator to the list of factors:

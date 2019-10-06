@@ -27,3 +27,15 @@ def test_param_one():
     value = 1
 
     assert len(generate_prime_factors(value, factors)) == 0
+
+
+def test_param_two():
+    """
+    STEP 3: Given 2 as a parameter, a list containing one value of
+    2 should be returned.
+    """
+    factors = []
+    value = 2
+    output_list = generate_prime_factors(value,factors)
+
+    assert len(output_list) == 1 and output_list[0] == 2
