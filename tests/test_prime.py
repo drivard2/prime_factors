@@ -8,7 +8,7 @@ from prime import generate_prime_factors
 
 def test_integer():
     """
-    Given anything but an integer value, a ValueError should be raised.
+    STEP 1: Given anything but an integer value, a ValueError should be raised.
     appended.
     """
     factors = []
@@ -17,3 +17,13 @@ def test_integer():
     for value in value_types:
         with pytest.raises(ValueError):
             generate_prime_factors(value, factors)
+
+
+def test_param_one():
+    """
+    STEP 2: Given 1 as a parameter, an empty list should be returned.
+    """
+    factors = []
+    value = 1
+
+    assert len(generate_prime_factors(value, factors)) == 0
