@@ -39,3 +39,15 @@ def test_param_two():
     output_list = generate_prime_factors(value,factors)
 
     assert len(output_list) == 1 and output_list[0] == 2
+
+
+def test_param_three():
+    """
+    STEP 4: Given 3 as a parameter, a list containing one value of
+    3 should be returned.
+    """
+    factors = []
+    value = 3
+    output_list = generate_prime_factors(value,factors)
+    # Assert only one value of 3:
+    assert len(output_list) == 1 and output_list[0] == 3
